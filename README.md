@@ -69,6 +69,7 @@ Supported Cars
 | Acura     | RDX 2020                      | AcuraWatch        | Stock            | 0mph               | 3mph              |
 | Honda     | Accord 2018-20                | All               | Stock            | 0mph               | 3mph              |
 | Honda     | Accord Hybrid 2018-20         | All               | Stock            | 0mph               | 3mph              |
+| Honda     | Inspire 2018                  | All               | Stock            | 0mph               | 3mph              |
 | Honda     | Civic Hatchback 2017-19       | Honda Sensing     | Stock            | 0mph               | 12mph             |
 | Honda     | Civic Sedan/Coupe 2016-18     | Honda Sensing     | openpilot        | 0mph               | 12mph             |
 | Honda     | Civic Sedan/Coupe 2019-20     | All               | Stock            | 0mph               | 2mph<sup>2</sup>  |
@@ -108,6 +109,7 @@ Supported Cars
 | Toyota    | Highlander Hybrid 2017-19     | All               | Stock<sup>3</sup>| 0mph               | 0mph              |
 | Toyota    | Highlander Hybrid 2020        | All               | openpilot        | 0mph               | 0mph              |
 | Toyota    | Prius 2016-20                 | TSS-P             | Stock<sup>3</sup>| 0mph               | 0mph              |
+| Toyota    | Prius 2021                    | All               | openpilot        | 0mph               | 0mph              |
 | Toyota    | Prius Prime 2017-20           | All               | Stock<sup>3</sup>| 0mph               | 0mph              |
 | Toyota    | Rav4 2016-18                  | TSS-P             | Stock<sup>3</sup>| 20mph<sup>1</sup>  | 0mph              |
 | Toyota    | Rav4 2019-21                  | All               | openpilot        | 0mph               | 0mph              |
@@ -239,7 +241,6 @@ Many factors can impact the performance of openpilot DM, causing it to be unable
 * Low light conditions, such as driving at night or in dark tunnels.
 * Bright light (due to oncoming headlights, direct sunlight, etc.).
 * The driver's face is partially or completely outside field of view of the driver facing camera.
-* Right hand driving vehicles.
 * The driver facing camera is obstructed, covered, or damaged.
 
 The list above does not represent an exhaustive list of situations that may interfere with proper operation of openpilot components. A driver should not rely on openpilot DM to assess their level of attention.
@@ -269,7 +270,7 @@ Safety and Testing
 
 Testing on PC
 ------
-For simplified development and experimentation, openpilot can be run in the CARLA driving simulator, which allows you to develop openpilot without a car. The whole setup should only take a few minutes. 
+For simplified development and experimentation, openpilot can be run in the CARLA driving simulator, which allows you to develop openpilot without a car. The whole setup should only take a few minutes.
 
 Steps:
 1) Start the CARLA server on first terminal
